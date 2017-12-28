@@ -8,7 +8,7 @@
     <Description>Client library to send SMS using Comilio SMS Gateway API (https://www.comilio.it)</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageTags>SMS</PackageTags>
-    <iconUrl>https://github.com/ielkin/dotnet-sms-send/blob/master/comilio-logo.jpeg?raw=true</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ielkin/dotnet-sms-send/master/comilio-logo.png</iconUrl>
   </PropertyGroup>
 
   <ItemGroup>
