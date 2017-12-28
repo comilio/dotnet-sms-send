@@ -7,7 +7,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Comilio
+namespace Comilio.SMS
 {
     public class SmsMessage
     {

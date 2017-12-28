@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comilio", "src\Comilio\Comilio.csproj", "{09EF4B5C-3761-45CD-AE93-E436649549ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comilio.SMS", "src\Comilio.SMS\Comilio.SMS.csproj", "{09EF4B5C-3761-45CD-AE93-E436649549ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

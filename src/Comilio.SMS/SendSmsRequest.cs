@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Comilio
+namespace Comilio.SMS
 {
     public class SendSmsRequest
     {

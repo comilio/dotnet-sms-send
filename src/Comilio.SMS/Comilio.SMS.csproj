@@ -2,12 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
-    <PackageId>Comilio</PackageId>
+    <PackageId>Comilio.SMS</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>Comilio</Authors>
     <Description>Client library to send SMS using Comilio SMS Gateway API (https://www.comilio.it)</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageTags>SMS</PackageTags>
+    <iconUrl>https://github.com/ielkin/dotnet-sms-send/blob/master/comilio-logo.jpeg?raw=true</iconUrl>
   </PropertyGroup>
 
   <ItemGroup>

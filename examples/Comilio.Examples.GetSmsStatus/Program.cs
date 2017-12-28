@@ -10,9 +10,9 @@ namespace Comilio.Examples.GetSmsStatus
     {
         static void Main(string[] args)
         {
-            string comilioUsername = "nodejs-dev"; // Please register on https://www.comilio.it
-            string comilioPassword = "j89w437uu";
-            string smsId = "825B73C4C263433BACA4F6FE775F2116";
+            string comilioUsername = "your_username_here"; // Please register on https://www.comilio.it
+            string comilioPassword = "your_password_here";
+            string smsId = "sms_id_here";
 
             var sms = new SmsMessage();
 
