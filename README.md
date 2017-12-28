@@ -9,7 +9,7 @@ To use this library, you must have a valid account on https://www.comilio.it.
 For any questions, please contact us at tech@comilio.it
 
 # How to send a message using C#
- 
+
 ```csharp
 var sms = new SmsMessage();
     sms.Authenticate("your_username", "your_password")
@@ -24,14 +24,14 @@ var sms = new SmsMessage();
 Install it via NuGet (https://nuget.org/).
 
 * Run `nuget install Comilio`
-* See script example https://github.com/ielkin/dotnet-sms-send/blob/master/examples/Comilio.Examples.SendSms/Program.cs
+* See script example https://github.com/comilio/dotnet-sms-send/blob/master/examples/Comilio.Examples.SendSms/Program.cs
 
 
 ## Manual installation
 
 You can simply clone the repository into your project and use the classes contained in src/ directory.
 
-Please check the examples directory here: https://github.com/ielkin/dotnet-sms-send/tree/master/examples
+Please check the examples directory here: https://github.com/comilio/dotnet-sms-send/tree/master/examples
 
 # More info
 
