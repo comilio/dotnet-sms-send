@@ -10,8 +10,8 @@ namespace Comilio.Examples.SendSms
     {
         static void Main(string[] args)
         {
-            string comilioUsername = "your_username_here"; // Please register on https://www.comilio.it
-            string comilioPassword = "your_password_here";
+            string comilioUsername = "nodejs-dev"; // Please register on https://www.comilio.it
+            string comilioPassword = "j89w437uu";
             string sender = "ComilioTest";
             string[] recipients = { "+393400000000", "+393499999999" };
             string text = "Hello World!";

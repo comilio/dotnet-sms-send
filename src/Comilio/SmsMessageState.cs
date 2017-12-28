@@ -16,6 +16,6 @@ namespace Comilio
 
         [JsonProperty("status")]
         [JsonConverter(typeof(StringEnumConverter))]
-        public string Status { get; set; }
+        public SmsStatus Status { get; set; }
     }
 }

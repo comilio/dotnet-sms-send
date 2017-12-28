@@ -75,7 +75,7 @@ namespace Comilio
                 if (senderLenght > 11)
                 {
                     _sender = null;
-                    throw new SmsException("Specified sender '$sender' is not valid");
+                    throw new SmsException($"Specified sender '{ sender }' is not valid");
                 }
             }
 
@@ -107,7 +107,7 @@ namespace Comilio
                 throw new Exception("SMS message text cannot be empty");
             }
 
-            if (_recipients != null || _recipients.Count() == 0)
+            if (_recipients == null || _recipients.Count() == 0)
             {
                 throw new Exception("At least one recipient is required");
             }
@@ -121,9 +121,13 @@ namespace Comilio
             {
                 MessageType = _type,
                 Recipients = _recipients,
-                Sender = _sender,
                 Text = message,
             };
+
+            if (!string.IsNullOrEmpty(_sender))
+            {
+                payload.Sender = _sender;
+            }
 
             using (var httpClient = new HttpClient())
             {
@@ -136,10 +140,10 @@ namespace Comilio
 
                 switch (response.StatusCode)
                 {
-                    case System.Net.HttpStatusCode.OK:
+                    case HttpStatusCode.OK:
                         _smsId = responseObject.message_id;
                         return true;
-                    case System.Net.HttpStatusCode.Unauthorized:
+                    case HttpStatusCode.Unauthorized:
                         throw new SmsException("Authentication failed");
                     default:
                         throw new Exception($"Unable to send SMS. Gateway response: { responseBody }");
@@ -187,7 +191,7 @@ namespace Comilio
 
         public static bool IsValidNumberFormat(string number)
         {
-            return Regex.IsMatch(number, @"/^\+?[0-9]{4,14}$/");
+            return Regex.IsMatch(number, @"^\+?[0-9]{4,14}$");
         }
 
         private static string BuildUrl(string resource)
