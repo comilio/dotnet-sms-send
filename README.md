@@ -23,7 +23,7 @@ var sms = new SmsMessage();
 
 Install it via NuGet (https://nuget.org/).
 
-* Run `nuget install Comilio`
+* Run `nuget install Comilio.SMS`
 * See script example https://github.com/comilio/dotnet-sms-send/blob/master/examples/Comilio.Examples.SendSms/Program.cs
 
 
